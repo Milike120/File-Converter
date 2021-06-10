@@ -17,8 +17,8 @@ namespace ConvertFile
         string InputFileName = "";
         string OutputFileName = "";
 
-        string rootFolderPath = @"" + Environment.GetEnvironmentVariable("ProgramFiles(x86)") + "\\ffmpeg\\bin\\";
-        string destinationPath = @"" + Environment.GetEnvironmentVariable("USERPROFILE") + "\\Desktop\\";
+        string rootFolderPath = Path.GetFullPath(Path.Combine(@Directory.GetCurrentDirectory(), @"..\..\..\..\..\bin\"));
+        string destinationPath = @Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\";
         string destFile;
 
         public Form1()
@@ -59,7 +59,7 @@ namespace ConvertFile
                 process.StartInfo.RedirectStandardOutput = true;
                 process.StartInfo.UseShellExecute = false;
                 process.Start();
-                process.StandardInput.WriteLine("cd " + Environment.GetEnvironmentVariable("ProgramFiles(x86)") + "/ffmpeg/bin/");
+                process.StandardInput.WriteLine("cd " + rootFolderPath);
                 process.StandardInput.WriteLine("ffmpeg -i " + InputFileName + " " + OutputFileName);
                 process.StandardInput.Flush();
                 process.StandardInput.Close();
@@ -77,7 +77,7 @@ namespace ConvertFile
 
         private void label2_Click(object sender, EventArgs e)
         {
-
+            label3.Text = destinationPath;
         }
 
         private void label3_Click(object sender, EventArgs e)

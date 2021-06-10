@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Program Files (x86)\\ffmpeg\\ConvertFile\\ConvertFile\\ConvertFile.csproj",
+      "projectUniqueName": "C:\\Program Files (x86)\\File-Converter\\ConvertFile\\ConvertFile\\ConvertFile.csproj",
       "projectName": "ConvertFile",
-      "projectPath": "C:\\Program Files (x86)\\ffmpeg\\ConvertFile\\ConvertFile\\ConvertFile.csproj",
+      "projectPath": "C:\\Program Files (x86)\\File-Converter\\ConvertFile\\ConvertFile\\ConvertFile.csproj",
       "packagesPath": "C:\\Users\\Milan\\.nuget\\packages\\",
-      "outputPath": "C:\\Program Files (x86)\\ffmpeg\\ConvertFile\\ConvertFile\\obj\\",
+      "outputPath": "C:\\Program Files (x86)\\File-Converter\\ConvertFile\\ConvertFile\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Milan\\AppData\\Roaming\\NuGet\\NuGet.Config",
